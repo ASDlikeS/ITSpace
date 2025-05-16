@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  --font-sans: "Roboto", sans-serif;
+}
+
+.bg-gif-banner {
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.allmystery.de%2Fstatic%2Fupics%2Ffb29cbe70c_Wallpaper_08_ns_1920_x_1080_STARFILD_ANI.gif&f=1&nofb=1&ipt=918b0e4029ceacb1a45836ea980135fe802d75e9354ac4f94d2b9268e4a4b1b3");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: bg-apperance 0.5s ease-in;
+}
+
+@keyframes bg-apperance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
