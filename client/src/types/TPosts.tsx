@@ -12,7 +12,7 @@ export type TPosts = {
 
 export type TPostSubmit = {
   title: string;
-  body: string;
+  text: string;
   tags?: string[];
   imageUrl?: string;
 };

@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import { type TModal } from "../../types/TProps";
 import { type TPostSubmit } from "../../types/TPosts";
+import axios from "../../../api/axios";
 
 export const ModalWindow: React.FC<TModal> = ({ isOpen, setIsOpen }) => {
   const [post, setPost] = useState<TPostSubmit>({
     title: "",
-    body: "",
+    text: "",
     imageUrl: "",
     tags: [],
   });
@@ -37,11 +38,30 @@ export const ModalWindow: React.FC<TModal> = ({ isOpen, setIsOpen }) => {
     }
   };
 
-  const handleRemoveTag = (tag: string) => {
+  const handleRemoveTag = (e: React.MouseEvent, tag: string) => {
+    e.preventDefault();
     setPost((prev) => ({
       ...prev,
       tags: prev.tags?.filter((t) => t !== tag),
     }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    try {
+      const { title, text, imageUrl, tags } = post;
+
+      await axios.post("/posts", {
+        title,
+        text,
+        imageUrl,
+        tags,
+      });
+      setIsOpen(false);
+    } catch (error: any) {
+      console.error("[ERROR] Post submitting ", error?.response?.data || error);
+    }
   };
 
   useEffect(() => {
@@ -97,7 +117,7 @@ export const ModalWindow: React.FC<TModal> = ({ isOpen, setIsOpen }) => {
                 <h1 className='mr-1'>{tag}</h1>
                 <button
                   className='cursor-pointer rounded-full bg-amber-50 w-5 h-5 flex justify-center items-center hover:bg-amber-400 transition-all duration-300 ease-in-out'
-                  onClick={() => handleRemoveTag(tag)}
+                  onClick={(e) => handleRemoveTag(e, tag)}
                 >
                   x
                 </button>
@@ -125,13 +145,16 @@ export const ModalWindow: React.FC<TModal> = ({ isOpen, setIsOpen }) => {
             </button>
           </div>
           <textarea
-            name='body'
+            name='text'
             placeholder='Today, I decided to start blogging!'
             className='self-center w-full border-gray-700 border-5 resize-none h-25 pl-2 focus:bg-amber-200'
-            value={post?.body}
+            value={post?.text}
             onChange={handleChange}
           />
-          <button className='h-10 mt-5 w-full rounded-lg border-2 border-gray-700 cursor-pointer hover:bg-amber-200 transition-all duration-300 ease-in-out'>
+          <button
+            onClick={handleSubmit}
+            className='h-10 mt-5 w-full rounded-lg border-2 border-gray-700 cursor-pointer hover:bg-amber-200 transition-all duration-300 ease-in-out'
+          >
             Create
           </button>
         </form>
