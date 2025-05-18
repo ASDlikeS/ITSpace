@@ -6,7 +6,7 @@
     "date": "2021-05-22",
     "tags": ["Marketing"],
     "author": "Michael Foster",
-    "position": "Co-Founder / CTO",
+    "job": "Co-Founder / CTO",
     "imageUrl": "https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
@@ -15,7 +15,7 @@
     "body": "React Полный курс от А до Я. Рассмотрим основные концепции и разработаем функционал, который встречается в каждом приложении.",
     "date": "2020-03-16",
     "author": "Lidsay Walton",
-    "position": "Front-end Developer",
+    "job": "Front-end Developer",
     "imageUrl": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2672&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "avatarUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmir-s3-cdn-cf.behance.net%2Fproject_modules%2Fmax_1200%2F22e60f95636919.5f60f2dda88ee.jpg&f=1&nofb=1&ipt=75e206284d594835d17366b4d7152a56aaff7a1f281f85a55d55e12437940a0f"
   },
@@ -25,7 +25,7 @@
     "body": "We’re here to create relaxing lofi music for every vibe. Whether you’re overwhelmed with work or just need a calming moment, our lofi beats are here to ease your mind. Experience soothing rain-drenched tunes perfect for sleeping, studying, or unwinding.",
     "date": "2024-12-24",
     "author": "Nikita Breznev",
-    "position": "Director of Product",
+    "job": "Director of Product",
     "avatarUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmir-s3-cdn-cf.behance.net%2Fproject_modules%2Fmax_1200%2F37a04795636919.5ff053424df01.jpg&f=1&nofb=1&ipt=cee5f523b0611d96d7523cac3d4a2655f98f33aeef30525b8af39c9ac469cc70",
     "tags": ["YouTube", "Dreams"],
     "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages-wixmp-ed30a86b8c4ca887773594c2.wixmp.com%2Ff%2F1fb896dd-cba1-4c09-89c7-c7178a830305%2Fdg23w8d-8818a112-1253-4439-8202-4e7b1e969ee8.png%2Fv1%2Ffill%2Fw_1024%2Ch_512%2Cq_80%2Cstrp%2F1950s_retro_future_ii_by_obsidianplanet_dg23w8d-fullview.jpg%3Ftoken%3DeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTEyIiwicGF0aCI6IlwvZlwvMWZiODk2ZGQtY2JhMS00YzA5LTg5YzctYzcxNzhhODMwMzA1XC9kZzIzdzhkLTg4MThhMTEyLTEyNTMtNDQzOS04MjAyLTRlN2IxZTk2OWVlOC5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.-p9h1sWdHbHsajCNlkQO-tMzNM6Fr0NHU5pHSfIILBI&f=1&nofb=1&ipt=8dbda7926c9b54b3ae7585e45fced8c2da93b8b4cc2b39601c1b079fd84337d0"
@@ -36,7 +36,7 @@
     "body": "Today we're tracking a pair of deals, one on the Apple Pencil 2 and one on the 2020 M1 MacBook Air. These sales include the current best price online for the Apple Pencil 2, and an all-time low price on the MacBook Air. Note: MacRumors is an affiliate partner with some of these vendors. When you click a link and make a...",
     "date": "2024-12-24",
     "author": "Nikita Breznev",
-    "position": "Director of Product",
+    "job": "Director of Product",
     "avatarUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F019%2F766%2F198%2Foriginal%2Fapple-logo-apple-icon-transparent-free-png.png&f=1&nofb=1&ipt=43003d5a17a3a51823bfbeccf67bf962b9dd2d07f4452c6bfff6985f78fe66c1",
     "tags": ["Goods", "Apple", "MacBook", "IOS 18"],
     "imageUrl": "https://images.unsplash.com/photo-1515343480029-43cdfe6b6aae?q=80&w=2728&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -47,7 +47,7 @@
     "body": "The 'Unknown at rule' error in Tailwind CSS typically occurs when your build tool or linter doesn't recognize Tailwind's custom at-rules like @tailwind, @apply, @variants, @responsive, etc. This error can be frustrating, but it's usually straightforward to fix with the correct configuration. This guide will walk you through the common causes and solutions to resolve this error.",
     "date": "2024-12-24",
     "author": "Lenovo",
-    "position": "Director of Product",
+    "job": "Director of Product",
     "avatarUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.dribbble.com%2Fusers%2F1684249%2Fscreenshots%2F15431837%2Fmedia%2Fb8793da764afaf229379b316181bf8eb.gif&f=1&nofb=1&ipt=5ec5d738667316e4b64bca292481ab06378bcbc8450da44ec48e484185607c72",
     "tags": ["Lenovo"],
     "imageUrl": "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"

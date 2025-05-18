@@ -1,4 +1,8 @@
-import type { ButtonHTMLAttributes, InputHTMLAttributes } from "react";
+import type {
+  ButtonHTMLAttributes,
+  InputHTMLAttributes,
+  ReactNode,
+} from "react";
 import { type TPosts } from "./TPosts";
 import type React from "react";
 
@@ -10,10 +14,6 @@ export type TPropsButton = ButtonHTMLAttributes<HTMLButtonElement> & {
 export type TPropsPost = {
   post: TPosts;
   onClick: () => void;
-};
-
-export type TPropsPosts = {
-  posts: TPosts[];
 };
 
 export type TModal = {
@@ -28,4 +28,9 @@ export interface TPropsInput extends InputHTMLAttributes<HTMLInputElement> {
 export type TPropsSpan = {
   children?: string;
   onClick?: React.MouseEventHandler<HTMLSpanElement>;
+};
+
+export type TPropProtectorRoute = {
+  children: ReactNode;
+  redirectTo?: string;
 };

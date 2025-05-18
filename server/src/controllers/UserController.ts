@@ -2,7 +2,7 @@ import { type Request, type RequestHandler, type Response } from "express";
 import { validationResult } from "express-validator";
 import { UserModel } from "../models/User";
 import bcrypt from "bcryptjs";
-import jwt, { type JwtPayload } from "jsonwebtoken";
+import jwt from "jsonwebtoken";
 import { JwtHash } from "../../dotenv_config/dotenvConfig";
 import type {
   authRequest,
@@ -33,7 +33,21 @@ export const register: RequestHandler<{}, authResponse, authRequest> = async (
       passwordHash: hash,
     });
 
-    const user = await doc.save();
+    let user;
+    try {
+      user = await doc.save();
+    } catch (err: any) {
+      if (err.code === 11000) {
+        httpResponses.forbidden(
+          res,
+          "Пользователь с таким email уже существует"
+        );
+        return;
+      }
+
+      httpResponses.serverError(res);
+      return;
+    }
 
     const token = jwt.sign(
       {

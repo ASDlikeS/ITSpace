@@ -1,13 +1,14 @@
 import type { ReactElement } from "react";
-import { Body } from "./body/Body";
-import { Header } from "./header/Header";
+import { AppRoutes } from "./routes/AppRoutes";
+import { AuthProvider } from "./context/AuthContext";
 
 export const App: React.FC = (): ReactElement => {
   return (
-    <div>
-      <Header />
-      <Body />
-    </div>
+    <>
+      <AuthProvider>
+        <AppRoutes />
+      </AuthProvider>
+    </>
   );
 };
 
